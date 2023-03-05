@@ -2,13 +2,13 @@ import styled from '@emotion/styled'
 
 interface TextAreaProps {
     value: string,
-    ref: React.RefObject<HTMLTextAreaElement>,
+    // ref: React.RefObject<HTMLTextAreaElement>,
     onChange: (value: string) => void
 }
 
 const TextArea: React.FC<TextAreaProps> = (props) => {
     return <TextAreaUi
-        ref={props.ref}
+        // ref={props.ref}
         value={props.value}
         onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => props.onChange(event.target.value)}
     />

@@ -1,10 +1,6 @@
 import styled from "@emotion/styled";
 
-interface DigramTreeWrapperProps {
-    height: string,
-}
-
-const DigramTreeWrapper = styled.div((props: DigramTreeWrapperProps) => ({
+const DigramTreeWrapper = styled.div(() => ({
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
@@ -12,8 +8,7 @@ const DigramTreeWrapper = styled.div((props: DigramTreeWrapperProps) => ({
     padding: '5px',
     boxSizing: 'border-box',
     width: '100%',
-    maxWidth: '100%',
-    height: props.height,
+    height: '63vh',
     overflow: 'auto',
     border: '2px solid #2724ff',
     borderRadius: '8px',
